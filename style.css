@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.3)),url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Lato;
+    font-weight: 200;
+    height: 100vh;
+    padding: 10vh 0% 15vh 20%;
+    
+}
+.cover{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),url(back1.jpg);
+    background-size: cover;
+    background-color: rgb(248, 248, 248);
+    width: 81.5%;
+    height: 80vh;
+}
+.active{
+    background-color: rgba(240, 238, 238,.3);
+}
+
+.block-0,
+.block-1{
+    text-align: center;
+    width: 81.5%;
+    height: 80vh;
+}
+.box{
+    background-color: rgb(66, 123, 228);
+    width: 30%;
+    margin: 10px 33%;
+    padding: 20px 20px;
+    height: 90px;
+    letter-spacing: 2px;
+}
+.current_valu{
+    font-size: 30px;
+    color: seashell;
+}
+
+.player{
+    margin-top: 25%;
+    margin-bottom: 10%;
+    font-size: 40px;
+    font-weight: 100;
+    color: rgb(131, 124, 124);
+    
+}
+.active .player {
+    font-weight: 500;
+    color: #141414;
+}
+.active .player::after{
+    content: "\2022";
+    font-size: 47px;
+    padding-left: 20px;
+    color: #EB4D4D;
+    top: -7px;
+    right: 10px;
+}
+.score{
+    margin-bottom: 30%;
+    font-size: 80px;
+    font-weight: 300;
+    color: rgb(161, 10, 10);
+}
+button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
+    color: rgb(230, 227, 227);
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+}
+i{
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+.btn_new{
+    top: 15%;
+}
+.btn_rol{
+    top: 65%;
+}
+.btn_hold{
+    top: 70%;
+}
+.dice{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 70px;
+}
+
+
+.row{
+    display: flex;
+    width: 100%;
+}
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.col-12{width: 100%;}
+.col-6{width: 50%;}
+.col-4{width: 33.33%;}
+.col-3{width: 25%;}
+.col-2{width: 16.66%;}
+
+.winer{
+    color:rgb(201, 201, 218);
+
+}
+
+.winer .btn_rol{
+    color: silver;
+}
+.winer i{
+    color: silver;
+    transition: margin 0s;
+}
+.winer .name-0,
+.winer .name-1{
+    color: darkred;
+}
+
